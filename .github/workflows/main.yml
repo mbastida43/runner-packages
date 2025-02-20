@@ -7,18 +7,21 @@ jobs:
     steps:
     - name: Checar repo
       uses: actions/checkout@v2
+      
     - name: Ler node do arquivo package.json
-      uses: josepdecid/get-nodejs-version@<VERSION>
+      uses: josepdecid/get-nodejs-version@v2
       id: get-node-version
+      
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
       node-version: ${{ steps.get-node-version.outputs.version }}
-      - name: Instalacao do ffmpeg   
-        run: |
+      
+    - name: Instalacao do ffmpeg   
+       run: |
           sudo apt update
           sudo apt install ffmpeg --yes
-      - name: Executar FFMPEG
-        run: |
+    - name: Executar FFMPEG
+      run: |
           ffmpeg -help
  
