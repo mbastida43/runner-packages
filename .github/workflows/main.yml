@@ -1,15 +1,14 @@
 name: Install
-
 on: 
   workflow_dispatch:
 jobs:
   install:
     runs-on: ubuntu-latest
     steps:
-      - name: Instalacao do FFMEPG
+      - name: Instalacao do ffmepg
         run |
-        sudo apt update --yes
-        sudo apt install ffmepg --yes
+          sudo apt update --yes
+          sudo apt install ffmepg --yes
       - name: Executar FFMPEG
         run: |
           ffmpeg -help
