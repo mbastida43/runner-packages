@@ -7,6 +7,9 @@ jobs:
     steps:
     - name: Mostrar a versão no node.js
       uses: actions/setup-node@v2
+    - name: Read node from package.json
+      uses: josepdecid/get-nodejs-version@<VERSION>
+      id: get-node-version
       with:
         node-version: ${{ steps.get-node-version.outputs.version }}
       - name: Instalacao do ffmpeg
