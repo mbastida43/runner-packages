@@ -5,10 +5,10 @@ jobs:
   install:
     runs-on: ubuntu-latest
     steps:
-      - name: Instalacao do ffmepg
+      - name: Instalacao do ffmepeg
         run: |
           sudo apt update
-          sudo apt install ffmepg --yes
+          sudo apt install ffmepeg --yes
       - name: Executar FFMPEG
         run: |
           ffmpeg -help
