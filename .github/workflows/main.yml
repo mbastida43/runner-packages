@@ -5,6 +5,11 @@ jobs:
   install:
     runs-on: ubuntu-latest
     steps:
+
+    - name: Mostrar a versão no node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ steps.get-node-version.outputs.version }}
       - name: Instalacao do ffmpeg
         run: |
           sudo apt update
