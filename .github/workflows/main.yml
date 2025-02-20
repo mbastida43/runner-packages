@@ -8,7 +8,7 @@ jobs:
     - name: Checar repo
       uses: actions/checkout@v2
     - name: Ler node do arquivo package.json
-      uses: josepdecid/get-nodejs-version@<VERSION>
+      uses: josepdecid/get-nodejs-version@v2
       id: get-node-version
     - name: Config do NodeJS
       uses: actions/setup-node@v2
