@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Instalacao do ffmepg
         run: |
-          sudo apt update --yes
+          sudo apt update
           sudo apt install ffmepg --yes
       - name: Executar FFMPEG
         run: |
