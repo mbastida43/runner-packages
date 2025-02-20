@@ -5,7 +5,6 @@ jobs:
   install:
     runs-on: ubuntu-latest
     steps:
-
     - name: Mostrar a versão no node.js
       uses: actions/setup-node@v2
       with:
