@@ -15,9 +15,9 @@ jobs:
       with:
       node-version: ${{ steps.get-node-version.outputs.version }}
     - name: Instalacao do ffmpeg
-       run: |
-          sudo apt update
-          sudo apt install ffmpeg --yes
+      run: |
+        sudo apt update
+        sudo apt install ffmpeg --yes
     - name: Executar FFMPEG
       run: |
           ffmpeg -help
