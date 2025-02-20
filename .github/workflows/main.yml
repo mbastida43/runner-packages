@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Instalacao do ffmepg
-        run |
+        run: |
           sudo apt update --yes
           sudo apt install ffmepg --yes
       - name: Executar FFMPEG
